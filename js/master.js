@@ -1,0 +1,55 @@
+function calculate() {
+  let attackSpeed = document.getElementById('attackSpeed').value;
+  let channelingDamage = document.getElementById('channelingDamage').value;
+  let firingRate = document.getElementById('firingRate').value;
+  let magazine = document.getElementById('magazine').value;
+  let reload = document.getElementById('reload').value;
+  let pellets = document.getElementById('pellets').value;
+  let multishot = document.getElementById('multishot').value;
+  let criticalChance = document.getElementById('criticalChance').value;
+  let criticalMultiplier = document.getElementById('criticalMultiplier').value;
+  let leapAttack = document.getElementById('leapAttack').value;
+  let spinAttack = document.getElementById('spinAttack').value;
+  let status = document.getElementById('status').value;
+  let wallAttack = document.getElementById('wallAttack').value;
+  let impact = document.getElementById('impact').value;
+  let puncture = document.getElementById('puncture').value;
+  let slash = document.getElementById('slash').value;
+  let cold = document.getElementById('cold').value;
+  let electricity = document.getElementById('electricity').value;
+  let heat = document.getElementById('heat').value;
+  let toxin = document.getElementById('toxin').value;
+  let voidStatus = document.getElementById('voidStatus').value;
+  let blast = document.getElementById('blast').value;
+  let corrosive = document.getElementById('corrosive').value;
+  let gas = document.getElementById('gas').value;
+  let magnetic = document.getElementById('magnetic').value;
+  let radiation = document.getElementById('radiation').value;
+
+  attackSpeed = attackSpeed || 1;
+  channelingDamage = channelingDamage || 1;
+  firingRate = firingRate || 1;
+  magazine = magazine || 1;
+  reload = reload || 1;
+  pellets = pellets || 1;
+  multishot = multishot || 1;
+  criticalChance = criticalChance || 1;
+  criticalMultiplier = criticalMultiplier || 1;
+  status = status || 1;
+  impact = impact || 0;
+  puncture = puncture || 0;
+  slash = slash || 0;
+  cold = cold || 0;
+  electricity = electricity || 0;
+  heat = heat || 0;
+  toxin = toxin || 0;
+  blast = blast || 0;
+  corrosive = corrosive || 0;
+  gas = gas || 0;
+  magnetic = magnetic || 0;
+  radiation = radiation || 0;
+
+  ips = impact + puncture + slash;
+  ped = cold + electricity + heat + toxin;
+  sed = blast + corrosive + gas + magnetic + radiation;
+}

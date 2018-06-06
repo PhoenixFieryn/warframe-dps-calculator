@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/master.js"></script>
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <div id="wrapper">
+    <p id="heading">Warframe DPS Calculator</p>
+    <table id="statInputTable">
+        <col width="200">
+        <tr>
+          <th>Stat</th>
+          <th>Input</th>
+        </tr>
+        <tr>
+          <td>Attack Speed</td>
+          <td><input type="text" id="attackSpeed"></td>
+        </tr>
+        <tr>
+          <td>Channeling Damage</td>
+          <td><input type="text" id="channelingDamage"></td>
+        </tr>
+        <tr>
+          <td>Firing Rate</td>
+          <td><input type="text" id="firingRate"></td>
+        </tr>
+        <tr>
+          <td>Magazine</td>
+          <td><input type="text" id="magazine"></td>
+        </tr>
+        <tr>
+          <td>Reload</td>
+          <td><input type="text" id="reload"></td>
+        </tr>
+        <tr>
+          <td>Pellets/Bullets per shot</td>
+          <td><input type="text" id="pellets"></td>
+        </tr>
+        <tr>
+          <td>Multishot</td>
+          <td><input type="text" id="multishot"></td>
+        </tr>
+        <tr>
+          <td>Critical Chance</td>
+          <td><input type="text" id="criticalChance"></td>
+        </tr>
+        <tr>
+          <td>Critical Multiplier</td>
+          <td><input type="text" id="criticalMultiplier"></td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td><input type="text" id="status"></td>
+        </tr>
+        <tr>
+          <td>Impact</td>
+          <td><input type="text" id="impact"></td>
+        </tr>
+        <tr>
+          <td>Puncture</td>
+          <td><input type="text" id="puncture"></td>
+        </tr>
+        <tr>
+          <td>Slash</td>
+          <td><input type="text" id="slash"></td>
+        </tr>
+        <tr>
+          <td>Cold</td>
+          <td><input type="text" id="cold"></td>
+        </tr>
+        <tr>
+          <td>Electricity</td>
+          <td><input type="text" id="electricity"></td>
+        </tr>
+        <tr>
+          <td>Heat</td>
+          <td><input type="text" id="heat"></td>
+        </tr>
+        <tr>
+          <td>Toxin</td>
+          <td><input type="text" id="toxin"></td>
+        </tr>
+        <tr>
+          <td>Void</td>
+          <td><input type="text" id="voidStatus"></td>
+        </tr>
+        <tr>
+          <td>Blast</td>
+          <td><input type="text" id="blast"></td>
+        </tr>
+        <tr>
+          <td>Corrosive</td>
+          <td><input type="text" id="corrosive"></td>
+        </tr>
+        <tr>
+          <td>Gas</td>
+          <td><input type="text" id="gas"></td>
+        </tr>
+        <tr>
+          <td>Magnetic</td>
+          <td><input type="text" id="magnetic"></td>
+        </tr>
+        <tr>
+          <td>Radiation</td>
+          <td><input type="text" id="radiation"></td>
+        </tr>
+        <tr>
+          <td>Viral</td>
+          <td><input type="text" id="viral"></td>
+        </tr>
+        <tr>
+          <td>Calculate</td>
+          <td><button id="submit" onclick="calculate()">Submit</button></td>
+        </tr>
+        <tr>
+          <td>Maximum DPS (Burst)</td>
+          <td><p id="maximumDPS">0.0</p></td>
+        </tr>
+        <tr>
+          <td>Sustained DPS</td>
+          <td><p id="sustainedDPS">0.0</p></td>
+        </tr>
+        <tr>
+          <td>Base DPS</td>
+          <td><p id="baseDPS">0.0</p></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>
